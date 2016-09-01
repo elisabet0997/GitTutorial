@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="com.fyg.cuadrillas.dao.resources.OpercionesCuadrillasDAO">
+	<insert id="InsertaRegistroEmpleado" parameterType="empleado">
+	INSERT INTO empleado(nombre,domicilio,calle,colonia) VALUES(#{nombre},#{domicilio},#{calle},#{colonia})
+	</insert>
+	<update id="ActualizaRegistroEmpleado" parameterType="empleado">
+	UPDATE FROM empleado SET
+	nombre = #{nombre},
+	domicilio = #{domicilio},
+	calle = #{calle},
+	colonia = #{colonia}
+	WHERE id = #{id}
+	</update>
+</mapper>
+
+//aqui sólo van inserts, updates y delets

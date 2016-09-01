@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+<typeAliases> aqui van los nombres de las clases que esten en el DTO
+ <typeAliases alias="Empleado" type="com.fyg.cuarillas.dto.Empleado"/>
+</typeAliases>
+  <context id="context1">
+    <jdbcConnection connectionURL="???" driverClass="???" password="???" userId="???" />
+    
+  </context>
+  <mapper> aqui va la ruta de los mappers que contienen los querys 
+  <mapper namespace="com/fyg/cuadrillas/dao/resources/OpercionesCuadrillasDAO.xml"/>
+  </mapper>
+</generatorConfiguration>
