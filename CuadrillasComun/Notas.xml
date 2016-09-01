@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+Común es donde van a ir todas las librerias de apoyo para nuestro proyecto como el logger, archivos de conexión, librerias externas.
+Cómo el SDK de nuestro lector en nuestro caso. Aqui va la fabrica de conexiones.
+FABRICA DE CONEXIONES: tiene todas las librerias de mybatis. Aqui van a ir todos los archivos java que se utilicen y dependan de las librerias. 
+Aqui se va a hacer el applet que depende del SDK del lector.
+
+En el DAO ab a ir la coneccion a la base de dato, querys y los metodos que se encargan de 
+consultas, metodos que hagas¿n uso de las consultas y la conexión query=consulta
+El mapper va a contener todos los querys y configuracion va a ser para la conexion a la base de datos
+<dependencies>
+  //pluggins o libreias que se encuentren en el repositorio de maven, lo recomendable es hacerlo manualmente 
